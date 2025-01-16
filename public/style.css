@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* Variables */
+
+:root {
+    --darkest-color: #18191a;
+    --darker-color: #242526;
+    --dark-color: #3a3b3c;
+    --light-color: #F4F4F4;
+    --text-color: #ccc;
+    --highlight-text-color: #fff;
+    --discolored-text-color: #999999;
+    
+    --transition-01: all 0.4s ease;
+    
+    --font-01: 'Poppins', sans-serif;
+    
+    --font-size-01: 9px;
+    --font-size-02: 11px;
+    --font-size-03: 13px;
+    --font-size-04: 15px;
+
+    --element-margin: 15px;
+    --body-margin: 20px;
+    --element-border-radius: 8px;
+}
+
+html {
+    font-size: var(--font-size-04);
+    box-sizing: border-box;
+    height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    overflow-x: hidden;
+    font-family: var(--font-01);
+    font-weight: normal;
+    color: var(--text-color);
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+    background-color: var(--darkest-color);
+    transition: var(--transition-01);
+}
+
+*,
+*:before, 
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+::selection { background-color: var(--light-color); color: black; }
+
+h1, h2, h3, h4, h5, h6, p, a, blockquote, address, big, small, code, img, iframe, li, ol, ul, strike, sub, sup, fieldset, form, label,legend, input, textarea, select, button, table, caption, tr, th, td {
+    border: none;
+    outline: none;
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+} 
+
+blockquote:before, blockquote:after {
+    content: "";
+}
+
+a {
+    color: var(--highlight-text-color);
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, {
+    margin: var(--element-margin) 0;
+    font-family: var(--font-02);
+    font-weight: 900;
+    line-height: 1.5;
+} 
+
+h1 { font-size: 29px; }
+h2 { font-size: 25px; }
+h3 { font-size: 22px; }
+h4 { font-size: 19px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+p { margin: var(--element-margin) 0; }
+
+hr {
+    border: none;
+    height: 1.2px;
+    background-color: var(--dark-color);
+}
+
+input,
+textarea,
+select,
+button {
+    border-radius: var(--element-border-radius);
+    background-color: var(--darker-color);
+    font-family: var(--font-01);
+    font-size: var(--font-size-02);
+    color: var(--highlight-text-color);
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+li, ol, ul, li > ol, li > ul {
+    list-style-position: inside;
+}
+
+ul li *, ol li * {
+   display: inline;
+}
+
+table, .wp-block-table {
+    font-size: var(--font-size-03);
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    caption-side: top;
+}
+
+table, wp-block-table, th, td,
+.wp-block-table td,
+.wp-block-table th {
+    border: 1.2px solid var(--dark-color);
+    vertical-align: top;
+    padding: var(--element-margin);
+}
+
+.wp-block-table thead {
+    border: 1.2px solid var(--dark-color);
+}
+
+caption, th, td {
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+}
+
+sub, sup {
+    font-size: 70%;
+}
