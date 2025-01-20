@@ -23,6 +23,8 @@
     --element-margin: 15px;
     --body-margin: 20px;
     --element-border-radius: 8px;
+
+    --element-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -85,6 +87,8 @@ blockquote:before, blockquote:after {
 }
 
 a {
+    text-wrap: nowrap;
+    text-decoration: none;
     color: var(--highlight-text-color);
 }
 
@@ -131,6 +135,7 @@ button{
 }
 
 li, ol, ul, li > ol, li > ul {
+    list-style: none;
     list-style-position: inside;
 }
 
