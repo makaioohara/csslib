@@ -29,7 +29,6 @@
 
 html {
     font-size: var(--font-size-04);
-    box-sizing: border-box;
     height: -webkit-fill-available;
     scroll-behavior: smooth;
 }
@@ -52,7 +51,6 @@ body {
     letter-spacing: 0.4px;
     line-height: 1.5;
     background-color: var(--darkest-color);
-    transition: var(--transition-01);
 }
 
 *,
@@ -60,9 +58,6 @@ body {
 *:after {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     word-break: break-word;
@@ -98,7 +93,6 @@ a:hover, a:focus {
 
 h1, h2, h3, h4, h5, h6, {
     margin: var(--element-margin) 0;
-    font-family: var(--font-02);
     font-weight: 900;
     line-height: 1.5;
 } 
@@ -124,7 +118,6 @@ select,
 button {
     border-radius: var(--element-border-radius);
     background-color: var(--darker-color);
-    font-family: var(--font-01);
     font-size: var(--font-size-02);
     color: var(--highlight-text-color);
     margin: 0;
@@ -168,7 +161,7 @@ caption, th, td {
 }
 
 th {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 sub, sup {

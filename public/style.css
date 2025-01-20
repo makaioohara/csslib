@@ -1,6 +1,6 @@
 .navigation {
     background-color: var(--dark-color);
-    padding: var(--element-margin) calc(var(--element-margin) * 2);
+    padding: var(--element-margin) calc(var(--element-margin) * 5);
 }
 
 .navbar {
@@ -25,11 +25,10 @@
 
 .navbar-item {
     position: relative;
-    margin-left: var(--element-margin);
+    margin-left: calc(var(--element-margin) * 2);
 }
 
-.navbar-link {
-    color: var(--highlight-text-color);
+.navbar-item a {
     font-weight: 500;
 }
 
@@ -49,9 +48,9 @@
 }
 
 .dropdown li {
-    margin-bottom: var(--element-margin);
+    padding: var(--element-margin) 0;
 }
 
 .dropdown li a {
-    color: var(--highlight-text-color);
+    font-weight: 500;
 }
