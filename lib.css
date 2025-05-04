@@ -3,13 +3,13 @@
 /* Variables */
 
 :root {
-    --darkest-color: #18191a;
-    --darker-color: #242526;
-    --dark-color: #3a3b3c;
-    --light-color: #F4F4F4;
+    --deep-color: #18191a;
+    --dark-color: #242526;
+    --surface-color: #3a3b3c;
+    --highlight-color: #F4F4F4;
     --text-color: #ccc;
-    --highlight-text-color: #fff;
-    --discolored-text-color: #999999;
+    --highlighted-text: #fff;
+    --discolored-text: #999999;
     
     --transition-01: all 0.4s ease;
     
@@ -19,12 +19,6 @@
     --font-size-02: 11px;
     --font-size-03: 13px;
     --font-size-04: 15px;
-
-    --element-margin: 15px;
-    --body-margin: 20px;
-    --element-border-radius: 8px;
-
-    --element-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -50,7 +44,7 @@ body {
     color: var(--text-color);
     letter-spacing: 0.4px;
     line-height: 1.5;
-    background-color: var(--darkest-color);
+    background-color: var(--deep-color);
 }
 
 *,
@@ -64,7 +58,7 @@ body {
     word-wrap: break-word;
 }
 
-::selection { background-color: var(--light-color); color: black; }
+::selection { background-color: var(--highlight-color); color: black; }
 
 h1, h2, h3, h4, h5, h6, p, a, blockquote, address, big, small, code, img, iframe, li, ol, ul, strike, sub, sup, fieldset, form, label,legend, input, textarea, select, button, table, caption, tr, th, td {
     border: none;
@@ -84,7 +78,7 @@ blockquote:before, blockquote:after {
 a {
     text-wrap: nowrap;
     text-decoration: none;
-    color: var(--highlight-text-color);
+    color: var(--highlighted-text);
 }
 
 a:hover, a:focus {
@@ -92,7 +86,6 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4, h5, h6, {
-    margin: var(--element-margin) 0;
     font-weight: 900;
     line-height: 1.5;
 } 
@@ -104,22 +97,21 @@ h4 { font-size: 19px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
-p { margin: var(--element-margin) 0; }
+p {  }
 
 hr {
     border: none;
     height: 1.2px;
-    background-color: var(--dark-color);
+    background-color: var(--surface-color);
 }
 
 input,
 textarea,
 select,
 button {
-    border-radius: var(--element-border-radius);
-    background-color: var(--darker-color);
+    background-color: var(--dark-color);
     font-size: var(--font-size-02);
-    color: var(--highlight-text-color);
+    color: var(--highlighted-text);
     margin: 0;
 }
 
@@ -147,13 +139,12 @@ table, .wp-block-table {
 table, wp-block-table, th, td,
 .wp-block-table td,
 .wp-block-table th {
-    border: 1.2px solid var(--dark-color);
+    border: 1.2px solid var(--surface-color);
     vertical-align: top;
-    padding: var(--element-margin);
 }
 
 .wp-block-table thead {
-    border: 1.2px solid var(--dark-color);
+    border: 1.2px solid var(--surface-color);
 }
 
 caption, th, td {
